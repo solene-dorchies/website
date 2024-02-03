@@ -9,7 +9,7 @@ import Home from "./pages/home";
 import Footer from "./components/footer";
 import About from "./pages/about";
 import Contact from "./pages/contact";
-import "./app.scss";
+import "./App.scss";
 
 export default function App() {
   return (
