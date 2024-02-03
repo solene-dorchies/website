@@ -1,4 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rajdhani:wght@500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.App {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cc9f7e;
+  border-radius: 5px;
+
+  &:hover {
+    background: #f8e7af;
+  }
 }

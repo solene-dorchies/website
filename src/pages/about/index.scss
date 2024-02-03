@@ -1,0 +1,25 @@
+@import "../../variables";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.Book-Bloc {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  .Title-Book {
+    position: absolute;
+    left: 270px;
+    bottom: 180px;
+    text-align: center;
+    z-index: -1;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    transform: rotate(-13deg);
+    background-image: url("img/Butterfly.png");
+    background-position: right top 24px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 0 #481e0f;
+    color: #eed294;
+  }
+}

@@ -1,5 +1,63 @@
 @import "../../variables";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 .demoPage {
-  background-color: red;
+  background-color: #f4e9dc;
+  border: 1px solid #c5bdbd;
+  cursor: pointer;
+  .Photo {
+    background-image: url("img/Bibliothèque.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 50%;
+      filter: grayscale(1);
+      border-radius: 50%;
+      border: 3px solid #481e0f;
+      background-color: #fff;
+      &:hover {
+        filter: none;
+        transition: 0.3s;
+      }
+    }
+  }
+  .Title {
+    text-align: center;
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 1px 1px 0 #481e0f;
+    width: 100%;
+    color: #eed294;
+  }
+  .Photo2 {
+    background-image: url("img/image2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .CSQuill {
+      width: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
 }
