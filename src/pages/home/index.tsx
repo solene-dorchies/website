@@ -1,20 +1,20 @@
-import{ useState } from "react";
+import { useState } from "react";
 import Confetti from "react-confetti";
 import Banniere from "../../components/banniere";
-import "./index.scss";
 import { NavLink } from "react-router-dom";
+import "./index.scss";
 
 export default function Home() {
-  const [imageSrc, setImageSrc] = useState<string>("/public/img/book.png");
+  const [imageSrc, setImageSrc] = useState<string>("img/book.png");
   const [showConfetti, setShowConfetti] = useState<boolean>(false);
 
   function handleMouseEnter() {
-    setImageSrc("/public/img/captive.jpg");
+    setImageSrc("img/captive.jpg");
     setShowConfetti(true);
   }
 
   function handleMouseLeave() {
-    setImageSrc("/public/img/book.png");
+    setImageSrc("img/book.png");
     setShowConfetti(false);
   }
 
@@ -60,11 +60,7 @@ export default function Home() {
             <p>Mon compte Instagram</p>
             <div className="img-section">
               <a href="https://www.instagram.com/s.dorchies/" target="_blank">
-                <img
-                  src="/public/img/ig.png"
-                  alt="Instagram"
-                  className="img-ig"
-                />
+                <img src="img/ig.png" alt="Instagram" className="img-ig" />
               </a>
             </div>
           </div>
@@ -76,7 +72,7 @@ export default function Home() {
                 target="_blank"
               >
                 <img
-                  src="/public/img/wattpad.png"
+                  src="img/wattpad.png"
                   alt="Wattpad"
                   className="img-wattpad"
                 />
