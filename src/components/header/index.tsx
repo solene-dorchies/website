@@ -31,15 +31,10 @@ export default function Header() {
   return (
     <header id="header">
       <div className="button-burger" id="button-burger">
-        <button className="burger">
-          <img
-            src={`/img/${
-              isButtonClicked === false ? "burger.png" : "cross.png"
-            }`}
-            alt=""
-            onClick={handleButtonClicked}
-          />
-        </button>
+        <button
+          className={`burger ${isButtonClicked ? "open" : ""}`}
+          onClick={handleButtonClicked}
+        />
       </div>
       <div className="header">
         <div className="Logo">
