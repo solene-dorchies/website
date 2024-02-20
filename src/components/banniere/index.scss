@@ -16,12 +16,13 @@
   h1 {
     text-align: center;
     padding: 50px 0px 50px 0px;
-    background-color: #fff;
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
+    border: 1px solid #19185b;
     .img-star {
       position: absolute;
       width: 100px;
