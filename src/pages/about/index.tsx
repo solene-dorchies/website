@@ -3,7 +3,7 @@ import "./index.scss";
 
 export default function About() {
   return (
-    <>
+    <article id="App-About">
       <div className="Book-Bloc">
         <Book />
         <div className="Title-Book">
@@ -11,6 +11,6 @@ export default function About() {
           <p>cliquez sur le petit livre !</p>
         </div>
       </div>
-    </>
+    </article>
   );
 }

@@ -3,7 +3,6 @@
 #header {
   background-color: #f9f9fb;
   border-bottom: 1px solid #cdcdcd;
-  margin-bottom: 50px;
   #button-burger {
     display: none;
   }
@@ -41,11 +40,11 @@
           a.active {
             background-image: linear-gradient(
               to right top,
-              #eee9d4,
-              #e3ddc1,
-              #d9d1af,
-              #cec59c,
-              #c4b98a
+              #19185b,
+              #23216e,
+              #653b72,
+              #7e528b,
+              #d972eb
             );
             border: 1px solid #4e2920;
             color: #fff;
@@ -95,11 +94,11 @@
             &.active {
               background-image: linear-gradient(
                 to right top,
-                #eee9d4,
-                #e3ddc1,
-                #d9d1af,
-                #cec59c,
-                #c4b98a
+                #19185b,
+                #23216e,
+                #653b72,
+                #7e528b,
+                #d972eb
               );
               border: 1px solid #4e2920;
             }

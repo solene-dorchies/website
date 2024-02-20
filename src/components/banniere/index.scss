@@ -1,0 +1,65 @@
+@import "../../variables";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.background {
+  height: 100vh;
+  background-image: url("/public/img/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+  p,
+  button {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    .img-star {
+      position: absolute;
+      width: 100px;
+      left: -50px;
+      top: -20px;
+    }
+    .title {
+      font-size: 50px;
+      font-family: "Dancing Script", cursive;
+      background: linear-gradient(to right, #19185b, #653b72, #d972eb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .citation {
+      font-size: 10px;
+      font-style: italic;
+      padding-top: 10px;
+      font-family: "Rajdhani", sans-serif;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .background {
+    h1 {
+      max-width: 700px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .background {
+    h1 {
+      max-width: 100%;
+      .img-star {
+        left: 100px;
+        top: -33px;
+      }
+    }
+  }
+}

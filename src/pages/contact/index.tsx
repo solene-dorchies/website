@@ -1,5 +1,5 @@
 import "./index.scss";
 
 export default function Contact() {
-  return <div>Contact</div>;
+  return <article id="App-Contact">Contact</article>;
 }

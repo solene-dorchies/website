@@ -1,1 +1,78 @@
 @import "../../variables";
+
+#App-Home {
+  max-width: 1320px;
+  margin: 0 auto;
+  font-family: "Rajdhani", sans-serif;
+  .presentation {
+    margin: 50px 0px 100px 0px;
+    text-align: center;
+    color: #4e2920;
+    font-size: 18px;
+    p {
+      padding: 20px;
+      margin-bottom: 25px;
+      span {
+        color: #653b72;
+        font-weight: bold;
+      }
+    }
+    a {
+      button {
+        background-image: linear-gradient(
+          to right top,
+          #19185b,
+          #23216e,
+          #653b72,
+          #7e528b,
+          #d972eb
+        );
+        padding: 10px 70px;
+        border: 1px solid #cdcdcd;
+        cursor: pointer;
+        color: #fff;
+        font-family: "Rajdhani", sans-serif;
+        font-size: 20px;
+        &:hover {
+          transition: 1s;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+  .about {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    p {
+      text-align: center;
+      font-weight: bold;
+      color: #653b72;
+      font-size: 20px;
+      padding-bottom: 15px;
+    }
+    div.fav-section {
+      .img-section {
+        position: relative;
+      }
+    }
+    .img-section {
+      cursor: pointer;
+      width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    .fav-section,
+    .ig-section {
+      margin-bottom: 50px;
+    }
+  }
+}
