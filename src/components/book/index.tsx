@@ -33,7 +33,7 @@ export default function Book() {
       >
         <div className="demoPage">
           <div className="Photo">
-            <img src="img/Photo.png" alt="" />
+            <img src="/img/Photo.png" alt="" />
           </div>
           <div className="Title">Solène Dorchies</div>
         </div>
@@ -108,7 +108,7 @@ export default function Book() {
         <div className="demoPage"></div>
         <div className="demoPage">
           <div className="Photo2">
-            <img src="img/CSQuill.png" alt="" className="CSQuill" />
+            <img src="/img/CSQuill.png" alt="" className="CSQuill" />
           </div>
         </div>
       </HTMLFlipBook>
