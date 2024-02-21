@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <div id="NotFound">
       <div className="img-blog">
-        <img src="img/404.png" alt="404 page not found" />
+        <img src="/img/404.png" alt="404 page not found" />
       </div>
       <h1>
         Nous sommes désolés, la page que vous avez demandée est introuvable ou
