@@ -4,26 +4,27 @@
 #App-About {
   max-width: 1320px;
   margin: 0 auto;
+  .Title-Book {
+    text-align: center;
+    margin: 50px 0px 100px 0px;
+    font-family: "Rajdhani", sans-serif;
+    color: #4e2920;
+    font-size: 18px;
+  }
   .Book-Bloc {
     display: flex;
     justify-content: center;
     align-self: center;
-    position: relative;
+    background: url("img/papillon.png") no-repeat;
+    background-position: left top;
+    // background-size: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #App-About {
     .Title-Book {
-      position: absolute;
-      left: 270px;
-      bottom: 180px;
-      text-align: center;
-      z-index: -1;
-      font-family: "Dancing Script", cursive;
-      font-size: 30px;
-      transform: rotate(-13deg);
-      background-image: url("img/Butterfly.png");
-      background-position: right top 24px;
-      background-size: 50px;
-      background-repeat: no-repeat;
-      text-shadow: 1px 1px 0 #481e0f;
-      color: #eed294;
+      margin: 50px 0px 20px 0px;
     }
   }
 }

@@ -118,20 +118,9 @@
           li {
             width: 98%;
             padding: 20px 0px 20px 0px;
-            &.active {
-              background-image: linear-gradient(
-                to right top,
-                #19185b,
-                #23216e,
-                #653b72,
-                #7e528b,
-                #d972eb
-              );
-              border: 1px solid #4e2920;
-            }
             a.active {
-              border: none;
-              background-image: none;
+              display: block;
+              width: auto;
             }
           }
         }

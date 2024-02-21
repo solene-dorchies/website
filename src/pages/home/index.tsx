@@ -31,11 +31,11 @@ export default function Home() {
             stage pour me former au métier de libraire.
           </p>
           <NavLink to="/about">
-            <button>En apprendre plus sur mes projets d'avenir</button>{" "}
+            <button>Mes projets</button>{" "}
           </NavLink>
         </div>
 
-        <div className="about">
+        <div id="comptes" className="about">
           <div className="fav-section">
             <p>Mon livre préféré 2023</p>
             <div className="img-section">

@@ -2,11 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 .demoPage {
-  background-color: #f4e9dc;
-  border: 1px solid #c5bdbd;
+  background-image: radial-gradient(
+    circle,
+    #c18fb2,
+    #9f719c,
+    #7c5587,
+    #583c73,
+    #30255f
+  );
+  border: 1px solid #1f142d;
   cursor: pointer;
   .Photo {
-    background-image: url("/public/img/background.jpg");
+    background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -20,14 +27,9 @@
     position: relative;
     img {
       width: 50%;
-      filter: grayscale(1);
       border-radius: 50%;
-      border: 3px solid #481e0f;
-      background-color: #fff;
-      &:hover {
-        filter: none;
-        transition: 0.3s;
-      }
+      border: 3px solid #63477f;
+      background-color: #1e1d5f;
     }
   }
   .Title {
@@ -38,12 +40,12 @@
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    text-shadow: 1px 1px 0 #481e0f;
+    text-shadow: 1px 1px 0 #4a3673;
     width: 100%;
-    color: #eed294;
+    color: #f3e0d4;
   }
   .Photo2 {
-    background-image: url("/public/img/background.jpg");
+    background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -58,6 +60,62 @@
       width: 100%;
       object-fit: cover;
       width: 100%;
+      filter: grayscale(1);
+    }
+  }
+  h1 {
+    color: #fff;
+    padding: 10px 0px 0px 20px;
+    font-size: 35px;
+  }
+  p {
+    font-size: 18px;
+    font-family: "Rajdhani", sans-serif;
+    padding: 10px;
+    text-align: justify;
+    color: #fff;
+    span {
+      font-weight: bold;
+      font-family: "Rajdhani", sans-serif;
+    }
+    .signature {
+      font-size: 55px;
+      font-family: "Dancing Script", cursive;
+    }
+  }
+  p.last-child {
+    text-align: center;
+  }
+  h1,
+  span {
+    font-family: "Dancing Script", cursive;
+  }
+  .bouton-comptes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    .button-account {
+      padding: 10px 70px;
+      border: 1px solid #19185b;
+      cursor: pointer;
+      color: #653b72;
+      font-family: "Rajdhani", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        background-image: linear-gradient(
+          to right top,
+          #19185b,
+          #23216e,
+          #653b72,
+          #7e528b,
+          #d972eb
+        );
+        color: #fff;
+      }
     }
   }
 }

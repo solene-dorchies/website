@@ -3,7 +3,7 @@
 
 .background {
   height: 100vh;
-  background-image: url("/public/img/background.png");
+  background-image: url("img/background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32,15 +32,18 @@
     .title {
       font-size: 50px;
       font-family: "Dancing Script", cursive;
-      background: linear-gradient(to right, #19185b, #653b72, #d972eb);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #fff;
+      text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+        #cf6fe0 0px 0px 20px, #cf6fe0 0px 0px 30px, #cf6fe0 0px 0px 40px,
+        #cf6fe0 0px 0px 50px, #cf6fe0 0px 0px 75px,
+        2px 2px 2px rgba(103, 148, 249, 0);
     }
     .citation {
-      font-size: 10px;
+      font-size: 15px;
       font-style: italic;
-      padding-top: 10px;
+      padding-top: 15px;
       font-family: "Rajdhani", sans-serif;
+      color: #fff;
     }
   }
 }
