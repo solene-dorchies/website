@@ -24,7 +24,7 @@ export default function Modale(props: Props) {
     >
       <div className="modal-content">
         <div className="img">
-          <img src="./../img/wait.png" alt="Curriculum Vitae en attente" />
+          <img src="/website/img/wait.png" alt="Curriculum Vitae en attente" />
         </div>
         <p>Mon Curriculum Vitae est en cours de création.</p>
         <p>
