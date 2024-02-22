@@ -8,7 +8,7 @@ export default function Footer() {
           <img src="./../img/Logo-SD.png" alt="" className="Logo" />
         </div>
         <div>
-          <p>Solène Dorchies - © 2024 v.1</p>
+          <p>Solène Dorchies - © 2024</p>
         </div>
       </div>
     </div>
