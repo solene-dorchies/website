@@ -24,9 +24,10 @@ export default function Home() {
       <article id="App-Home">
         <div className="presentation">
           <p>
-            Bonjour, je m'appelle <span>Solène</span> et j'ai 15 ans. Je suis
-            passionnée par les livres. Mon rêve ? <span>Devenir libraire</span>{" "}
-            et partager ma passion avec les autres.{" "}
+            Bonjour, je m'appelle <span>Solène</span> et j'ai bientôt 16 ans. Je
+            suis passionnée par les livres. Mon rêve ?{" "}
+            <span>Devenir libraire</span> et partager ma passion avec les
+            autres.{" "}
             <span>Je cherche une entreprise qui pourrait m'accueillir </span>en
             stage pour me former au métier de libraire.
           </p>
