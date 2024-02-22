@@ -18,7 +18,7 @@ export default function App() {
       <Header />
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/website" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/error-page-not-found" element={<NotFound />} />
