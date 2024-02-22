@@ -93,7 +93,7 @@ export default function Book() {
             avec vous.
           </p>
           <div className="bouton-comptes">
-            <HashLink to="/#comptes">
+            <HashLink to="/website#comptes">
               <button className="button-account">Comptes littéraires</button>
             </HashLink>
           </div>
