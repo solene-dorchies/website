@@ -12,7 +12,7 @@ export default function NotFound() {
         n'existe pas...
       </h1>
       <div className="button-notfound">
-        <NavLink to="/">
+        <NavLink to="/website">
           <button>Accueil</button>
         </NavLink>
       </div>

@@ -48,7 +48,7 @@ export default function Header() {
                 className={`link ${activeTab === "home" ? "active" : ""}`}
                 onClick={() => handleTabClick("home")}
               >
-                <NavLink to="/">Accueil</NavLink>
+                <NavLink to="/website">Accueil</NavLink>
               </li>
               <li
                 className={`link ${activeTab === "about" ? "active" : ""}`}
