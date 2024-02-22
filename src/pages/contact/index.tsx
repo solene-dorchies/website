@@ -16,7 +16,7 @@ export default function Contact() {
     <>
       <article id="App-Contact" ref={contactPageRef}>
         <div className="contact-page">
-          <img src="img/contact1.png" alt="" className="contact1" />
+          <img src="./img/contact1.png" alt="" className="contact1" />
           <div>
             <h1>Solène Dorchies</h1>
             <div className="details">
@@ -48,7 +48,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <img src="img/contact2.png" alt="" className="contact2" />
+          <img src="./img/contact2.png" alt="" className="contact2" />
         </div>
         <div className="download-page">
           <p>Télécharger mes coordonnées</p>
