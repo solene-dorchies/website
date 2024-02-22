@@ -38,7 +38,7 @@ export default function Header() {
       </div>
       <div className="header">
         <div className="Logo">
-          <img src="/img/Logo-SD.png" alt="" />
+          <img src="img/Logo-SD.png" alt="" />
         </div>
         {largeurEcran >= 768 ||
         (largeurEcran < 768 && isButtonClicked === true) ? (
