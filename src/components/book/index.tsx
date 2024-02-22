@@ -1,18 +1,30 @@
+import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import HTMLFlipBook from "react-pageflip";
 import "./index.scss";
 
 export default function Book() {
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const isMobile = windowWidth <= 550;
+  const site = windowWidth <= 1000;
+
   return (
     <>
       <HTMLFlipBook
-        width={500}
-        height={500}
+        width={isMobile ? 350 : 500}
+        height={isMobile ? 350 : 500}
         size="stretch"
-        minWidth={500}
-        maxWidth={500}
-        minHeight={500}
-        maxHeight={500}
+        minWidth={isMobile ? 350 : 500}
+        maxWidth={isMobile ? 350 : 500}
+        minHeight={isMobile ? 350 : 500}
+        maxHeight={isMobile ? 350 : 500}
         drawShadow={true}
         flippingTime={500}
         usePortrait={true}
@@ -105,7 +117,7 @@ export default function Book() {
             <span className="signature">Solène</span>
           </p>
         </div>
-        <div className="demoPage"></div>
+        {site === false ? <div className="demoPage"></div> : <></>}
         <div className="demoPage">
           <div className="Photo2">
             <img src="/img/CSQuill.png" alt="" className="CSQuill" />

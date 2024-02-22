@@ -27,3 +27,11 @@
     }
   }
 }
+
+@media screen and (max-width: 550px) {
+  #App-About {
+    .Book-Bloc {
+      background: none;
+    }
+  }
+}

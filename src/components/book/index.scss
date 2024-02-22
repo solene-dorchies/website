@@ -119,3 +119,21 @@
     }
   }
 }
+
+@media screen and (max-width: 550px) {
+  .demoPage {
+    p {
+      font-size: 12px;
+      .signature {
+        font-size: 35px;
+      }
+    }
+    .bouton-comptes {
+      margin-top: 40px;
+      .button-account {
+        font-size: 15px;
+        padding: 10px 50px;
+      }
+    }
+  }
+}

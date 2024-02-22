@@ -1,6 +1,177 @@
 @import "../../variables";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 #App-Contact {
   max-width: 1320px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .contact-page {
+    margin-top: 50px;
+    border: 1px solid #181f3b;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .contact1,
+    .contact2 {
+      width: 100%;
+    }
+    h1 {
+      font-size: 50px;
+      font-family: "Dancing Script", cursive;
+      color: #fff;
+      text-shadow: #8da1c2 0px 0px 5px, #8da1c2 0px 0px 10px,
+        #8da1c2 0px 0px 15px, #37446e 0px 0px 20px, #37446e 0px 0px 30px,
+        #37446e 0px 0px 40px, #37446e 0px 0px 50px, #37446e 0px 0px 75px,
+        2px 2px 2px rgba(103, 148, 249, 0);
+    }
+    .details {
+      margin-top: 15px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+      div {
+        display: flex;
+        color: #4e2920;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 15px;
+        font-family: "Rajdhani", sans-serif;
+        button {
+          border: 1px solid #19185b;
+          cursor: pointer;
+          color: #653b72;
+          font-family: "Rajdhani", sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          &:hover {
+            transition: all 0.5s ease-in-out;
+            background-image: linear-gradient(
+              to right top,
+              #19185b,
+              #23216e,
+              #653b72,
+              #7e528b,
+              #d972eb
+            );
+            color: #fff;
+          }
+        }
+        p,
+        a,
+        button {
+          &:last-child {
+            padding: 10px 50px;
+            margin-top: 10px;
+          }
+          svg {
+            color: #9941be;
+          }
+        }
+        a {
+          color: #4e2920;
+          text-decoration: none;
+          font-weight: bold;
+          &:hover {
+            transition: 1s;
+            color: #9941be;
+          }
+        }
+      }
+    }
+  }
+  .download-page {
+    margin-top: 50px;
+    font-family: "Rajdhani", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    button {
+      border: 1px solid #19185b;
+      cursor: pointer;
+      color: #653b72;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+      margin-top: 10px;
+      padding: 5px 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        background-image: linear-gradient(
+          to right top,
+          #19185b,
+          #23216e,
+          #653b72,
+          #7e528b,
+          #d972eb
+        );
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #App-Contact {
+    .contact-page {
+      width: 90%;
+      .contact1,
+      .contact2 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #App-Contact {
+    .contact-page {
+      width: 90%;
+      .contact1,
+      .contact2 {
+        width: 100%;
+      }
+      .details {
+        grid-template-columns: repeat(1, 1fr);
+        div {
+          padding: 25px 0px 25px 0px;
+          font-size: 20px;
+          border-bottom: 1px solid #181f3b;
+          &:last-child {
+            border-bottom: none;
+          }
+          a {
+            font-size: 20px;
+            &:last-child {
+              padding: 10px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media print {
+  #App-Contact {
+    .contact-page {
+      width: 90%;
+      margin-top: 10px;
+    }
+    .download-page {
+      display: none;
+    }
+  }
 }
